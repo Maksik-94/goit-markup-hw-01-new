@@ -1,0 +1,271 @@
+:root {
+  --text-color-primary: #212121;
+  --text-color-sacondary: #2196f3;
+  --background-color-primary: #e5e5e5;
+  --background-color-header: #ffffff;
+  --text-color-white: #ffffff;
+  --text-color-grey: #757575;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-color-primary);
+}
+
+a:hover,
+a:focus {
+  color: var(--text-color-sacondary);
+}
+ul,
+ol {
+  list-style: none;
+}
+
+/*________HEADER ШАПКА__________*/
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 1600px;
+  height: 80px;
+
+  background: var(--text-color-white);
+}
+
+.web {
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color-sacondary);
+}
+
+.header .webstudio {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  width: 145px;
+  height: 31px;
+  margin-top: 24px;
+  margin-left: 215px;
+  letter-spacing: 0.03em;
+}
+/*___________NAVIGATION________ */
+.header .navigation {
+  height: 16px;
+  margin-top: 32px;
+  display: flex;
+  margin-top: 32px;
+  margin-left: 94px;
+}
+.navigation-item:not(last-child) {
+  margin-right: 50px;
+}
+
+.navigation .current {
+  color: var(--text-color-sacondary);
+}
+/*============END HEADER ШАПКА=========*/
+/*=============HERO-ГЕРОЙ==============*/
+.hero {
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img_hero.png);
+}
+.tagline {
+  /*__Эффективные решения для вашего бизнеса__*/
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 900;
+  width: 696px;
+  font-size: 44px;
+  line-height: 60px;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color-primary);
+}
+.button {
+  /* ___BUTTON-Заказать-услугу___ */
+  background: var(--text-color-sacondary);
+  color: var(--background-color-header);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.order {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.order a {
+  text-decoration: none;
+  color: var(--text-color-white);
+}
+/*=============END HERO-ГЕРОЙ===========*/
+
+/*=========ADVANTAGE-ПРЕМУЩЕСТВО=========*/
+/*____________ADVANTAGE-ITEM____________*/
+.advantage {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 1200px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.advantage__card {
+  width: 270px;
+  height: 251px;
+}
+.advantage__card:not(:last-child) {
+  margin-right: 30px;
+}
+.advantage__heading {
+  width: 270px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  color: var(--text-color-primary);
+}
+.advantage__text {
+  width: 270px;
+  height: 101px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text-color-grey);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/*=======END ADVANTAGE-ПРЕМУЩЕСТВО========*/
+/*=============TEAM-КОМАНДА==============*/
+.team {
+  width: 1600px;
+  height: 648px;
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f5f4fa;
+}
+.team .heading-main {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+/*__team-item__*/
+.team__cards {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  margin-top: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.team__card-items {
+  width: 270px;
+  height: 428px;
+  align-content: center;
+  background-color: var(--text-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  /* background-color: var(--background-color-header); */
+}
+.team__card-items:not(last-child) {
+  margin-right: 30px;
+}
+.team__name {
+  /*_____Имя______ */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-primary);
+}
+.team__post {
+  /* ____Должность___ */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-grey);
+}
+/*============FOOTER-ПОДВАЛ==============*/
+.footer {
+  display: flex;
+  background-color: #2f303a;
+  width: 1600px;
+  height: 252px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer a {
+  color: var(--text-color-white);
+}
+.footer__logo-title {
+  width: 145px;
+  height: 31px;
+  padding-top: 60px;
+  padding-left: 215px;
+}
+/*____footer-adress____*/
+.footer__adress {
+  margin-top: 100px;
+  padding-top: 20px;
+  width: 231px;
+}
+.footer__adress .adress-link {
+  width: 231px;
+  padding-bottom: 9px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.adress-link:nth-child(2),
+.adress-link:nth-child(3) {
+  color: rgba(255, 255, 255, 0.6);
+}
